@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Style Folder="MainMenuStyle">
+  <Fonts>
+    <Font Name="Default" URI="MenuFont"/>
+    <Font Name="TextBlockFont" URI="TextBlockFont"/>
+  </Fonts>
+
+  <BoxStyle Name="Default" URI="MenuSheet" Font="Default">
+    <EdgeTexture Source="4,0,1,5"/>
+    <CornerTexture Source="0,0,5,5"/>
+    <FillTexture Source="2,0,1,1" Tiled="false"/>
+  </BoxStyle>
+  <BoxStyle Name="Block" URI="TextBlockSheet" Font="TextBlockFont">
+    <EdgeTexture Source="6,0,6,6"/>
+    <CornerTexture Source="0,0,6,6"/>
+    <FillTexture Source="3,5,1,1" Tiled="false"/>
+  </BoxStyle>
+</Style>
