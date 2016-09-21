@@ -17,7 +17,8 @@ namespace GuiCookie
         private GraphicsDevice GraphicsDevice;
         private SpriteBatch SpriteBatch;
         private Vector2 Scale;
-        
+        public Vector2 Position { get { return Vector2.Zero; } }
+
         //public Matrix Transform
         //{
         //    get
@@ -36,7 +37,7 @@ namespace GuiCookie
             Elements = new List<Element>(5);
            
             StyleSettings = GuiFunctions.LoadStyleSheet(StyleSheet, Content, GraphicsDevice);
-            SetData(GuiFunctions.LoadGuiSheet(GuiSheet, StyleSettings, ButtonPressed));
+            GuiFunctions.LoadGuiSheet(GuiSheet, StyleSettings, ButtonPressed, this);
             SpriteBatch = new SpriteBatch(GraphicsDevice);
             Window.ClientSizeChanged += ScaleChanged;
         }
@@ -68,9 +69,9 @@ namespace GuiCookie
             return null;
         }
 
-        public Vector2 GetPosition()
+        public void AddElement(Element Element)
         {
-            return Vector2.Zero;
+            Elements.Add(Element);
         }
 
         //This will draw each element

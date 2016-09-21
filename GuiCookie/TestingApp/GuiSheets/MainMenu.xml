@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Main ResolutionX="1280" ResolutionY="720">
 
-  <Frame Bounding="0,0,100,100">
+  <Frame Bounding="0,0,100,100" Name="MainButtons">
     <Button Bounding="0,0,100,50" Message="ButtonOne" Name="Button1" Style="Default" Text="Button 1"/>
     <Button Bounding="0,55,100,50" Message="ButtonTwo" Name="Button2" Style="Default" Text="Button 2"/>
   </Frame>
-  <Frame Bounding="105,0,100,100">
+  <Frame Bounding="155,0,100,100">
     <Button Bounding="0,0,150,50" Message="HideButtonOne" Style="Default" Text="Toggle Button 1"/>
     <Button Bounding="0,55,150,50" Message="HideButtonTwo" Style="Default" Text="Toggle Button 2"/>
-    <TextBlock Bounding ="155,0,150,50" Text="Time" Style="Block" Name="Timer"/>
   </Frame>
+  <TextBlock Bounding ="75,110,150,50" Text="Time" Style="Block" Name="Timer"/>
 </Main>

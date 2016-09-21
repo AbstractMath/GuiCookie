@@ -10,6 +10,7 @@ namespace GuiCookie
     public interface IGuiContainer
     {
         Element GetNamedElement(string Name);
+        void AddElement(Element Element);
         Vector2 Position { get; }
     }
 }

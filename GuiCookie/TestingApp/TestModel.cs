@@ -10,6 +10,8 @@ namespace TestingApp
     {
 
         TextBlock Timer;
+        Button Button1;
+
 
         private bool hidden;
         public bool Hidden
@@ -26,6 +28,7 @@ namespace TestingApp
             : base(GuiSheet, StyleSheet, Window, Content, GraphicsDevice)
         {
             Timer = GetNamedElement("Timer") as TextBlock;
+            Button1 = (GetNamedElement("MainButtons") as Frame).GetNamedElement("Button1") as Button;  
         }
 
         public override void ButtonPressed(string message)
@@ -33,8 +36,8 @@ namespace TestingApp
             switch (message)
             {
                 case "HideButtonOne":
-                    bool v = GetNamedElement("Button1").Visible;
-                    GetNamedElement("Button1").Visible = !v;
+                    bool v = Button1.Visible;
+                    Button1.Visible = !v;
                     Hidden = v;
                     break;
             }

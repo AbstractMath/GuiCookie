@@ -23,5 +23,7 @@ namespace GuiCookie
             data = Node.Value.Split(',');
             return new Vector2(Convert.ToInt16(data[0]), Convert.ToInt16(data[1]));
         }
+
+
     }
 }

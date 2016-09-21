@@ -11,6 +11,7 @@ namespace GuiCookie
             ElementTemplate template = new ElementTemplate();
             //Sets the Bounding
             template.Bounding = GetRectangleFromNode(Node.GetNamedItem("Bounding"));
+            template.Bounding.Location += Parent.Position.ToPoint();
             //Sets the visibility, if none is found it defaults to visible
             XmlNode visible = Node.GetNamedItem("Visible");
             template.Visible = (visible == null) ? true : Convert.ToBoolean(visible.Value);
@@ -40,18 +41,6 @@ namespace GuiCookie
             return template;
         }
 
-        private static FrameTemplate CreateFrameTemplate(XmlAttributeCollection Node, ElementTemplate baseTemplate)
-        {
-            //Makes a new FrameTemplate based off the baseTemplate
-            FrameTemplate template = new FrameTemplate();
-            template.Bounding = baseTemplate.Bounding;
-            template.Name = baseTemplate.Name;
-            template.Visible = baseTemplate.Visible;
-            template.Parent = baseTemplate.Parent;
-            template.Elements = EnumerateNode(Node);
-            return template;
-        }
-
         private static TextBlockTemplate CreateTextBlockTemplate(XmlAttributeCollection Node, ElementTemplate baseTemplate, StyleSettings styleSettings)
         {
             //Makes a new TextBlockTemplate based off the baseTemplate
@@ -67,5 +56,6 @@ namespace GuiCookie
             template.TextBlockStyle = styleSettings.ButtonStyles[Node.GetNamedItem("Style").Value];
             return template;
         }
+
     }
 }

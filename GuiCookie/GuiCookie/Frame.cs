@@ -12,20 +12,28 @@ namespace GuiCookie
 
         List<Element> Elements;
 
-        public Frame(FrameTemplate Template)
+        public Frame(ElementTemplate Template)
             : base(Template)
         {
-            Elements = Template.Elements;
+            Elements = new List<Element>();
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch SpriteBatch)
         {
-
+            //If the element is invisible, don't bother drawing
+            if (!Visible) return;
+            foreach (Element e in Elements)
+            {
+                e.Draw(SpriteBatch);
+            }
         }
 
         public override void Update(GameTime gameTime)
         {
-
+            foreach (Element e in Elements)
+            {
+                e.Update(gameTime);
+            }
         }
 
         public Element GetNamedElement(string Name)
@@ -38,10 +46,9 @@ namespace GuiCookie
             return null;
         }
 
-    }
-
-    public class FrameTemplate : ElementTemplate
-    {
-        public List<Element> Elements;
+        public void AddElement(Element Element)
+        {
+            Elements.Add(Element);
+        }
     }
 }
