@@ -11,7 +11,7 @@ namespace GuiCookie
         public Rectangle BoundingRect { get; set; }
         public string Name { get; set; }
         public bool Visible { get; set; }
-        public IGuiContainer Parent { get; set; }
+        public IGuiContainer Parent { get; private set; }
 
         public Element(ElementTemplate Template)
         {
