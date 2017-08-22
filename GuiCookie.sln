@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuiCookie", "GuiCookie\GuiCookie.csproj", "{5A8697D7-973A-4D36-98D7-891DC9229C59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{DFCAB881-9A32-4ACB-AEA6-06443D39866C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuiCookieTests", "GuiCookieTests\GuiCookieTests.csproj", "{70CC17EC-D91D-4F8E-B2FB-17A55A9393ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A8697D7-973A-4D36-98D7-891DC9229C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8697D7-973A-4D36-98D7-891DC9229C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8697D7-973A-4D36-98D7-891DC9229C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8697D7-973A-4D36-98D7-891DC9229C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCAB881-9A32-4ACB-AEA6-06443D39866C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCAB881-9A32-4ACB-AEA6-06443D39866C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCAB881-9A32-4ACB-AEA6-06443D39866C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCAB881-9A32-4ACB-AEA6-06443D39866C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CC17EC-D91D-4F8E-B2FB-17A55A9393ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CC17EC-D91D-4F8E-B2FB-17A55A9393ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CC17EC-D91D-4F8E-B2FB-17A55A9393ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CC17EC-D91D-4F8E-B2FB-17A55A9393ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

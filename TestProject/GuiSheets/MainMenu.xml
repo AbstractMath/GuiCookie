@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+
+  <Frame Position="50" Size="200, 200" Name="Frame" Padding="20%" >
+    <Button Position="10%" Size="75%" Anchor="0.5" Padding="5%" Text="Test" TextAnchor="0.5" Hover="Hover" ID="Button1" Function="TestMethod(5.75f, 2, 'Hello')"/>
+    <Frame Position="60%" Size="50, 50" >
+      <Button Position="50%" Anchor="0.5" Size="75%"/>
+    </Frame>
+  </Frame>
+  
+</Main>

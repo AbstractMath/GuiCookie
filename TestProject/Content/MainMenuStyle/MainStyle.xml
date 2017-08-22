@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Body>
+  <!--The resources for this style-->
+  <Resources Folder="MainMenuStyle">
+    <Fonts>
+      <Font Name="Default" URI="MenuFont"/>
+      <Font Name="TextBlockFont" URI="TextBlockFont"/>
+    </Fonts>
+    <Images>
+      <Image Name="DefaultButton" URI="TextBlockSheet"/>
+    </Images>
+  </Resources>
+  
+  <!--The main content for the style-->
+  <Style>
+    <Element>
+      <Background Image="DefaultButton" Source="2,23,1,1" Tiled="false"/>
+      <Border Image="DefaultButton" Edge="9,22,1,6" Corner="16,22,3,3" BottomLeft-Corner="0,23,7,7" TopRight-Corner="9,22,7,7"/>
+    </Element>
+
+    <Button>
+      <Text Font="Default" Colour="255,0,0"/>
+    </Button>
+
+    <Button Name="Hover">
+      <Background Colour="64,64,64"/>
+      <Border Colour="64,64,64"/>
+    </Button>
+  </Style>
+</Body>
